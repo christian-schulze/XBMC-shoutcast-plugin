@@ -1,0 +1,6 @@
+[B]Version 1.1.1[/B]
+- Mark plugin as broken.
+  See here for details: http://www.shoutcastblog.com/2010/09/30/shoutcast-api-update/
+[B]Version 1.2.0[/B]
+- fixes to work with xbmc 10.1
+- code refactoring
