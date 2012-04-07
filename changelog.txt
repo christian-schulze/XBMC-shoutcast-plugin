@@ -4,3 +4,5 @@
 [B]Version 1.2.0[/B]
 - fixes to work with xbmc 10.1
 - code refactoring
+[B]Version 1.3.0[/B]
+- added an option to manually enter a station's url

@@ -67,6 +67,14 @@ def PLAY(relative_url, station_id):
   log("PLAY URL: %s" % url)
   xbmc.Player().play(url)
 
+def get_station_name():
+  kb = xbmc.Keyboard("http://", __language__(30094), False)
+  kb.doModal()
+  if (kb.isConfirmed() and len(kb.getText()) > 2):
+    url = kb.getText()
+    log("PLAY URL: %s" % url)
+    xbmc.Player().play(url)
+	
 def get_search_terms():
   kb = xbmc.Keyboard("", __language__(30092), False)
   kb.doModal()
@@ -160,7 +168,9 @@ if iid > 1:
   sort()
 
 elif iinitial > 1:
-  if initial == "search":
+  if initial == "enter":
+    get_station_name()
+  elif initial == "search":
     get_search_terms()
     sort()
   else:
@@ -175,6 +185,9 @@ elif isearch > 1:
   sort()
   
 else:
+  u = "%s?initial=enter" % (sys.argv[0])
+  liz = xbmcgui.ListItem(__language__(30093), iconImage = "DefaultFolder.png", thumbnailImage = "")
+  ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url = u, listitem = liz, isFolder = True)
   u = "%s?initial=search" % (sys.argv[0])
   liz = xbmcgui.ListItem(__language__(30091), iconImage = "DefaultFolder.png", thumbnailImage = "")
   ok = xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url = u, listitem = liz, isFolder = True)
