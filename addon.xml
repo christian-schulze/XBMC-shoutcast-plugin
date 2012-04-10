@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.shoutcast" name="Shoutcast" version="1.2.0" provider-name="Team XBMC">
+<addon id="plugin.audio.shoutcast" name="Shoutcast" version="1.3.0" provider-name="Team XBMC">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
@@ -11,8 +11,10 @@
     <summary lang="en">Shoutcast</summary>
     <summary lang="hu">Shoutcast rádiók</summary>
     <summary lang="pt">Rádio Shoutcast</summary>
+    <summary lang="nl">Shoutcast Radio</summary>
     <description lang="en">SHOUTcast Radio offers thousands of free Internet radio stations from DJs and broadcasters around the world</description>
     <description lang="hu">A SHOUTcast több ezer ingyenes internetes rádiót kínál DJ-k és rádióállomások jóvoltából.</description>
     <description lang="pt">A rádio SHOUTcast oferece milhares de rádios livres existentes na Internet, mantidas por DJs de todo o mundo.</description>
+	<description lang="nl">SHOUTcast Radio biedt duizenden gratis Internet radiostatinos aan van DJs en zenders overal ter wereld</description>
   </extension>
 </addon>

@@ -4,4 +4,6 @@
 	<string id="30090">List all stations</string>
 	<string id="30091">Search for station</string>
     <string id="30092">Enter station name</string>
+    <string id="30093">Manually enter station</string>
+    <string id="30094">Enter station url</string>
 </strings>
